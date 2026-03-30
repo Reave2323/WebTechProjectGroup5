@@ -11,6 +11,80 @@
 
 
 
+    <style>
+        /* Popup overlay */
+        .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+        }
+
+        /* Show popup */
+        .popup:target {
+        opacity: 1;
+        pointer-events: auto;
+        }
+
+        /* Card */
+        .popup-card {
+        width: 700px;
+        background: #fff;
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        }
+
+        /* Close button */
+        .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #333;
+        }
+
+        /* Image */
+        .left img {
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        /* Content */
+        .right {
+        padding: 20px;
+        flex: 1;
+        }
+
+        /* Button */
+        .apply-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #00a8a8;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+
 </head>
 <body>
     <nav class="menu">
@@ -32,7 +106,7 @@
                     <p>Help design, build, and maintain database systems and architecture, ensuring data security, and processing large amounts of data.</p>
                     <p><strong>Salary:</strong>  $87,000 + Superannuation</p>
                     <a href="apply.html"><button>Apply Now</button></a>
-                    <a href="job_30029.html"><button>Details</button></a>
+                    <a href="#job-popup-1" class="open-btn"><button>Details</button></a>
                 </div>
             </div>
             <div class="card">
@@ -42,7 +116,7 @@
                     <p>Help build FakeShops client facing website structure to be more inline with professional platform standards.</p>
                     <p><strong>Salary:</strong>  $75,000 + Superannuation</p>
                     <a href="apply.html"><button>Apply Now</button></a>
-                    <a href="job_10025.html"><button>Details</button></a>
+                    <a href="#job-popup-2" class="open-btn"><button>Details</button></a>
 
                 </div>
             </div>
@@ -53,11 +127,116 @@
                     <p>Co-operate with customers, providing product/service information, answering questions, and resolving any problems that the customer might face.</p>
                     <p><strong>Salary:</strong>  $75,000 + Superannuation</p>
                     <a href="apply.html"><button>Apply Now</button></a>
-                    <a href="job_40098.html"><button>Details</button></a>
+                    <a href="#job-popup-3" class="open-btn"><button>Details</button></a>
                 </div>
             </div>
         </div>
     </fieldset>
+    
+    <!-- Frontend Dev Popup -->
+    <div id="job-popup-2" class="popup">
+    <div class="popup-card">
+
+        <!-- Close button -->
+        <a href="#" class="close">&times;</a>
+
+        <!-- Left image -->
+        <div class="left">
+        <img src="images/FEDev.jpg" alt="Job">
+    </div>
+
+        <!-- Right content -->
+        <div class="right">
+            <h2>Frontend Developer</h2>
+            <p>💼 Full-time</p>
+            <p><strong>Location:</strong> Hybrid</p>
+            <p><strong>Salary:</strong> $75,000 + Superannuation</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Database Engineer Popup -->
+    <div id="job-popup-1" class="popup">
+    <div class="popup-card">
+
+        <!-- Close button -->
+        <a href="#" class="close">&times;</a>
+
+        <!-- Left image -->
+        <div class="left">
+        <img src="images/DBEng.jpg" alt="Job">
+    </div>
+
+        <!-- Right content -->
+        <div class="right">
+            <h2>Database Engineer</h2>
+            <p>💼 Full-time</p>
+            <p><strong>Location:</strong> Hybrid</p>
+            <p><strong>Salary:</strong> $75,000 + Superannuation</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+        </div>
+
+    </div>
+    </div>
+    
+    <!-- Customer Support Popup -->
+    <div id="job-popup-3" class="popup">
+    <div class="popup-card">
+
+        <!-- Close button -->
+        <a href="#" class="close">&times;</a>
+
+        <!-- Left image -->
+        <div class="left">
+        <img src="images/CSupport.jpg" alt="Job">
+    </div>
+
+        <!-- Right content -->
+        <div class="right">
+            <h2>Customer Support</h2>
+            <p>💼 Full-time</p>
+            <p><strong>Location:</strong> Hybrid</p>
+            <p><strong>Salary:</strong> $75,000 + Superannuation</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+        </div>
+
+    </div>
+    </div>
+    
+    
+    
+    
+    <!-- Edit/comment out before submissions -->
+    <h1>TEST SECTION</h1>
+    <!-- Button that opens pop up -->
+    <a href="#job-popup" class="open-btn">View Job Details</a>
+
+    <!-- Popup details -->
+    <div id="job-popup" class="popup">
+    <div class="popup-card">
+
+        <!-- Close button -->
+        <a href="#" class="close">&times;</a>
+
+        <!-- Left image -->
+        <div class="left">
+        <img src="images/CSupport.jpg" alt="Job">
+    </div>
+
+        <!-- Right content -->
+        <div class="right">
+            <h2>Frontend Developer</h2>
+            <p>💼 Full-time</p>
+            <p><strong>Location:</strong> Hybrid</p>
+            <p><strong>Salary:</strong> $75,000 + Superannuation</p>
+            <a href="apply.html"><button>Apply Now</button></a>
+        </div>
+
+    </div>
+    </div>
+
 
 
 
