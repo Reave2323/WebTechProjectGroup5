@@ -11,37 +11,65 @@
     <style>
 
 
-.card-container {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 /* Add some padding inside the card container */
 .card-container {
-  padding: 2px 16px;
+  max-width: 80%;
+  margin:50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap:25px;
 }
-    </style>
+.card {
+    flex:1;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 20px;
+
+}
+.card-content h3 {
+    color: #026aa6;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+.card-content {
+    color: #333;
+    font-size: 17px;
+}
+
+</style>
 
 
 
 </head>
 <body>
-    <ul class="nav">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./jobs.html">Jobs With Us</a></li>
-        <li><a href="./about.html">Contact</a></li>
-        <li><a href="./apply.html">Apply Now</a></li>
-    </ul>
-
+    <nav class="menu">
+        <ul>
+            <li><img src="images/FakeShop_logo.png" width="64px" height="64px"></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./jobs.html">Jobs With Us</a></li>
+            <li><a href="./about.html">Contact</a></li>
+            <li><a href="./apply.html">Apply Now</a></li>
+        </ul>
+    </nav>
     <p>Here at FakeShop, we are committed to providing quality customer service. We are a small team consisting of 3 Founding members and are always on the lookout for new talent to help in our mission.</p>
     <fieldset>
         <div class="card-container">
@@ -50,8 +78,7 @@
                     <h2><strong>Database Engineer</strong></h2>
                     <h4><strong>Reference Number: 30029</strong></h4>
                     <p>Help design, build, and maintain database systems and architecture, ensuring data security, and processing large amounts of data.</p>
-                    <h4>Salary</h4>
-                    <p>$87,000 + Superannuation</p>
+                    <p><strong>Salary:</strong>  $87,000 + Superannuation</p>
                 </div>
             </div>
             <div class="card">
@@ -59,8 +86,15 @@
                     <h2><strong>Front End Developer</strong></h2>
                     <h4><strong>Reference Number: 10025</strong></h4>
                     <p>Help build FakeShops client facing website structure to be more inline with professional platform standards.</p>
-                    <h4>Salary</h4>
-                    <p>$75,000 + Superannuation</p>
+                    <p><strong>Salary:</strong>  $75,000 + Superannuation</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2><strong>Customer Support</strong></h2>
+                    <h4><strong>Reference Number: 40098</strong></h4>
+                    <p>Co-operate with customers, providing product/service information, answering questions, and resolving any problems that the customer might face.</p>
+                    <p><strong>Salary:</strong>  $75,000 + Superannuation</p>
                 </div>
             </div>
         </div>

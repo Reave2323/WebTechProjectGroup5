@@ -1,21 +1,21 @@
-  nav ul { 
+ul { 
     list-style-type: none; 
     padding: 0;
     margin: 0;
     overflow: hidden;
-  }
+}
 
-  ul.nav li {
+ul li {
     display: inline;
     margin-right: 20px;
-  }
+}
 
-  ul.nav li a {
+ul li a {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-  }
+}
   
-  .card-container {
+.card-container {
     max-width: 80%;
-  }
+}
