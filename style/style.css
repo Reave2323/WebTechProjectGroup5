@@ -1,3 +1,6 @@
+/* menu navigation styling */
+
+
 ul { 
     list-style-type: none; 
     padding: 0;
@@ -16,8 +19,8 @@ ul li a {
     font-weight: bold;
 }
 
-/* Add some padding inside the card container */
-.card-container {
+/* Styling for the overarching container for each card to keep things uniform */
+.card-container { 
   max-width: 80%;
   margin:50px auto;
   display: flex;
@@ -25,6 +28,7 @@ ul li a {
   justify-content: space-around;
   gap:25px;
 }
+/* Each cards styling. Box shadow makes it easier to distinguish between cards */
 .card {
     flex:1;
     background: #fff;
@@ -33,12 +37,13 @@ ul li a {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
-
+/* subtle hover effect */
 .card:hover {
     transform: scale(1.05);
 
 }
 
+/* settings for the images for each card */
 .card img {
     width: 100%;
     height: auto;
@@ -49,6 +54,8 @@ ul li a {
     padding: 20px;
 
 }
+
+/* card content styling */
 .card-content h3 {
     color: #026aa6;
     font-size: 27px;
