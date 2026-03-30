@@ -21,6 +21,8 @@
 
     <h1 id="JobApplication"><strong>Employment Application</strong></h1>
 
+    <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post"></form>
+
    
 
     
@@ -33,7 +35,7 @@
             </p>
             <p>
             <label for="FirstName">First Name</label>
-            <input type="text" id="FirstName" placeholder="Enter First Name"
+            <input type="text" id="FirstName" placeholder="Enter First Name">
             <label for="LastName">Last Name</label>
             <input type="text" id="LastName" placeholder="Enter Last Name">
             </p>
@@ -43,17 +45,94 @@
             </p>
             
         </fieldset>
-        <fieldset>
-            <label for="Gender">Gender</label>
-            <br>
+        <fieldset> <!---Gender-->
+            <legend>Gender</legend>
             <label for="Male">M</label>
             <input type="radio" id="male" value="male">
             <label for="Female">F</label>
             <input type="radio" id="Female" value="Female">
         </fieldset>
 
+        <fieldset> <!---Address--->
+            <p>
+             <label for="Street">Street Address</label>
+             <input type="text" id="Street" placeholder="Enter your street">
+            </p>
+            <p>
+                <label for="Suburb/Town">Suburb/Town</label>
+                <input type="text" id="Suburb/Town" placeholder="Enter your Suburb/Town">
+
+            </p>
+            <p>
+                <Label for="State">State</Label> 
+                <select id="States" name="State">
+                    <option value="">Select a State</option> 
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </p>
+            <p>
+                <label for="Postcode">Postcode</label>
+                <input type="text" id="Postcode" placeholder="Enter your postcode">
+            </p>
+
+
+        </fieldset>
+
+        <fieldset> <!---USER EMAIL-->
+            <legend>Contact Information</legend>
+            <p> 
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Enter your email" >
+            </p>
+            <p>
+                <label for="PhoneNumber">Phnone Number</label>
+                <input type="text" placeholder="Enter your phone number">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <legend>Skills</legend>
+                <p><!--Codeing skills (make drop down for those who click yes)-->
+                    <label for="HTML_exp">HTML</label>
+                    <input type="checkbox" id="Html_exp" value="HTML" name="Skills[]">
+                    <label for="JIRA_exp">JIRA</label>
+                    <input type="checkbox" id="JIRA_exp" value="JIRA" name="Skills[]">
+                    <label for="CSS_exp">CSS</label>
+                    <input type="checkbox" id="CSS_exp" name="Skills[]" value="CSS">
+                    <label for="Javascript_exp">Javascript</label>
+                    <input type="checkbox" name="Skills[]" id="Javascript_exp" value="Javascript">
+                    <label for="PHP_exp">PHP</label>
+                    <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP">
+                    <label for="MySQL_exp">MySQL</label>
+                    <input type="checkbox" name="Skills[]" id="MySQL_exp" value="MySQL">
+                </p>
+                <p> <!---Communication Skills or smth idk-->
+                    <label for="Communication">Communication Skills</label>
+                    <input type="checkbox" name="Skills[]" id="Communication" value="Communication">
+                    <label for="ProblemSolvingSkills">Problem Solving Skills</label>
+                    <input type="checkbox" name="Skills[]" id="ProblemSolvingSkills" value="ProblemSolvingSkills">
+                </p>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Other skills</legend>
+            <textarea placeholder="Describe your other skills" id="Other_skills" name="Other skills" rows="3" cols="40"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Apply">
+        <input type="Reset"  value="Reset Application"
+
 
     </form>
+
+    
 
 
 
