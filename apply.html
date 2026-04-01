@@ -37,26 +37,26 @@
             </p>
             <p>
             <label for="DateOfBirth">Date Of Birth</label>
-            <input type="date" placeholder="dd/mm/yyyy">
+            <input type="date" Id="Date_Of_Birth" Name="DateOfBirth" placeholder="dd/mm/yyyy">
             </p>
             
         </fieldset>
         <fieldset> <!---Gender-->
             <legend>Gender</legend>
             <label for="Male">M</label>
-            <input type="radio" id="male" value="male">
+            <input type="radio" id="male" Name="Gender" value="male">
             <label for="Female">F</label>
-            <input type="radio" id="Female" value="Female">
+            <input type="radio" id="Female" Name="Gender" value="Female">
         </fieldset>
 
         <fieldset> <!---Address--->
             <p>
              <label for="Street">Street Address</label>
-             <input type="text" id="Street" placeholder="Enter your street">
+             <input type="text" id="Street" Name="Address[]" placeholder="Enter your street">
             </p>
             <p>
                 <label for="Suburb/Town">Suburb/Town</label>
-                <input type="text" id="Suburb/Town" placeholder="Enter your Suburb/Town">
+                <input type="text" id="Suburb/Town" Name="Address[]" placeholder="Enter your Suburb/Town">
 
             </p>
             <p>
@@ -85,11 +85,11 @@
             <legend>Contact Information</legend>
             <p> 
                 <label for="Email">Email</label>
-                <input type="text" placeholder="Enter your email" >
+                <input type="text" Id="Email_adress" name="Email" placeholder="Enter your email" >
             </p>
             <p>
                 <label for="PhoneNumber">Phnone Number</label>
-                <input type="text" placeholder="Enter your phone number">
+                <input type="text" id="Phone_number" name="Phone number" placeholder="Enter your phone number">
             </p>
         </fieldset>
         <fieldset>
