@@ -1,3 +1,17 @@
+* {
+    font-family: calibri, sans-serif, Arial, Helvetica;
+}
+
+
+
+/* 
+QUICK REFERENCE FOR NAVBAR
+NAVBAR = .navbar {}
+NAV-CONTAINER = .nav-container {}
+NAV LINKS = nav.links {}
+NAV ACTIONS = .nav-actions {}
+*/
+
 /* links navigation styling */
 nav.links {
     display: flex;
@@ -34,13 +48,13 @@ nav.links ul li a {
     width: 80px;
 }
 
-.nav.links ul {
+nav.links ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-.nav.links a {
+nav.links a {
     text-decoration: none;
     color: #111;
     font-weight: 500;
