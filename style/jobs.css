@@ -1,0 +1,142 @@
+/* Styling for the overarching container for each card to keep things uniform */
+.card-container {
+    max-width: 95%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+/* Each cards styling. Box shadow makes it easier to distinguish between cards */
+.card {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* subtle hover effect */
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+/* settings for the images for each card */
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 20px;
+
+}
+
+/* card content styling */
+.card-content h3 {
+    color: #026aa6;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    color: #333;
+    font-size: 17px;
+}
+
+
+
+/* Popup overlay */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Show popup */
+.popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Card */
+.popup-card {
+    width: 700px;
+    max-width: 1000px;
+    max-height: 90vh;
+    background: #fff;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Image */
+.left {
+    flex: 0 0 250px;
+    /* fixed width column */
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Content */
+.right {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+
+    display: block;
+}
+
+.right ul {
+    display: block;
+    list-style: disc;
+    /* bring back bullets */
+    margin: 10px 0;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.right li {
+    display: list-item;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.apply-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00a8a8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
