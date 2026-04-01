@@ -7,6 +7,7 @@ nav.links {
     /* pushes logo left, links right */
 }
 
+/* Tidies navbar */
 nav.links ul {
     list-style-type: none;
     padding: 0;
@@ -14,27 +15,50 @@ nav.links ul {
     overflow: hidden;
 }
 
-
+/* Ensures navbar is inline */
 nav.links ul li {
     display: inline;
     margin-right: 20px;
 }
 
+/* Text Decoration for navbar */
 nav.links ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: #cf8f18;
     font-weight: bold;
 }
 
+/* Sets logo size DON'T TOUCH */
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.nav.links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav.links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* positions navbar */
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
+    bottom: auto;
     background: white;
     z-index: 1000;
     border-bottom: 1px solid #eee;
 }
 
+/* Container positioning for navbar, Centers the navbar and gives background colour */
 .nav-container {
     display: flex;
     width: 100%;
@@ -44,29 +68,6 @@ nav.links ul li a {
     background-color: #292626;
 }
 
-.logo img {
-    height: 128px;
-    width: 128px;
-}
-
-.nav-links ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #e4002b;
-    /* Swinburne red */
-}
-
 .nav-actions {
     display: flex;
     gap: 20px;
@@ -74,10 +75,7 @@ nav.links ul li a {
     font-size: 20px;
 }
 
-body {
-    margin-top: 170px;
-}
-
-#content-area {
-    margin-top: 500px;
+/* Creates space between page content and navbar */
+.content-area {
+    margin-top: 116px;
 }
