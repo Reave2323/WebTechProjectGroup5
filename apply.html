@@ -37,14 +37,14 @@
             </p>
             <p>
             <label for="DateOfBirth">Date Of Birth</label>
-            <input type="text" Id="Date_Of_Birth" Name="DateOfBirth" pattern="\d{2}-\d{2}-\d{4}" placeholder="dd/mm/yyyy" required="required">
+            <input type="text" Id="Date_Of_Birth" Name="DateOfBirth" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required="required">
             </p>
             
         </fieldset>
         <fieldset> <!---Gender-->
             <legend>Gender</legend>
             <label for="Male">M</label>
-            <input type="radio" id="male" Name="Gender" value="male">
+            <input type="radio" id="male" Name="Gender" value="male" required="required">
             <label for="Female">F</label>
             <input type="radio" id="Female" Name="Gender" value="Female">
         </fieldset>
@@ -52,16 +52,17 @@
         <fieldset> <!---Address--->
             <p>
              <label for="Street">Street Address</label>
-             <input type="text" id="Street" Name="Address[]" placeholder="Enter your street">
+             <input type="text" id="Street" Name="Address[]" placeholder="Enter your street" pattern="[a-zA-Z0-9\s.,-]{5,40}" maxlength="40" required="required">
             </p>
             <p>
                 <label for="Suburb/Town">Suburb/Town</label>
-                <input type="text" id="Suburb/Town" Name="Address[]" placeholder="Enter your Suburb/Town">
+                <input type="text" id="Suburb/Town" Name="Address[]" placeholder="Enter your Suburb/Town" pattern="[a-zA-Z0-9\s.,-]{5,40}" maxlength="40" required="required">
+            </p>>
 
             </p>
             <p>
                 <Label for="State">State</Label> 
-                <select id="States" name="State">
+                <select id="States" name="State" required="required">
                     <option value="">Select a State</option> 
                     <option value="VIC">VIC</option>
                     <option value="NSW">NSW</option>
@@ -75,7 +76,7 @@
             </p>
             <p>
                 <label for="Postcode">Post Code</label>
-                <input type="text" id="Postcode" name="Address[]" placeholder="Enter your postcode">
+                <input type="text" id="Postcode" name="Address[]" placeholder="Enter your postcode" pattern="[0-9]{4}">
             </p>
 
 
