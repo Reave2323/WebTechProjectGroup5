@@ -27,7 +27,7 @@
             <img id="FormLogo" src="/images/FakeShop_logo.png" width="100" height="100">
             <p>
             <label for="Reference number">Job Reference Number</label>
-            <input type="text" id="Reference number" name="Referemce_Number" Placeholder="Enter Reference Number">
+            <input type="text" id="Reference_number" name="Reference Number" pattern="[0-9]{5}" placeholder="Enter Reference Number" required="required">
             </p>
             <p>
             <label for="FirstName">First Name</label>
@@ -37,7 +37,7 @@
             </p>
             <p>
             <label for="DateOfBirth">Date Of Birth</label>
-            <input type="date" Id="Date_Of_Birth" Name="DateOfBirth" placeholder="dd/mm/yyyy">
+            <input type="text" Id="Date_Of_Birth" Name="DateOfBirth" pattern="\d{2}-\d{2}-\d{4}" placeholder="dd/mm/yyyy" required="required">
             </p>
             
         </fieldset>
@@ -74,7 +74,7 @@
                 </select>
             </p>
             <p>
-                <label for="Postcode">Postcode</label>
+                <label for="Postcode">Post Code</label>
                 <input type="text" id="Postcode" name="Address[]" placeholder="Enter your postcode">
             </p>
 
