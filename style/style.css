@@ -1,8 +1,10 @@
 /* menu navigation styling */
 nav.menu {
     display: flex;
-    justify-content: center;
+    align-items: center;        /* vertically align logo + menu */
+    justify-content: center; /* pushes logo left, menu right */
 }
+
 nav.menu ul {
     list-style-type: none;
     padding: 0;
