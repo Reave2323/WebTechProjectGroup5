@@ -27,13 +27,13 @@
             <img id="FormLogo" src="/images/FakeShop_logo.png" width="100" height="100">
             <p>
             <label for="Reference number">Job Reference Number</label>
-            <input type="text" id="Reference number" Placeholder="Enter Reference Number">
+            <input type="text" id="Reference number" name="Referemce_Number" Placeholder="Enter Reference Number">
             </p>
             <p>
             <label for="FirstName">First Name</label>
-            <input type="text" id="FirstName" name="First_Name" placeholder="Enter First Name">
+            <input type="text" id="FirstName" name="First_Name" maxlength="20" pattern="[A-Za-z ]+" placeholder="Enter First Name" required="required">
             <label for="LastName">Last Name</label>
-            <input type="text" id="LastName" name="Last_Name" placeholder="Enter Last Name">
+            <input type="text" id="LastName" name="Last_Name" maxlength="20" pattern="[A-Za-z ]+" placeholder="Enter Last Name" required="required">
             </p>
             <p>
             <label for="DateOfBirth">Date Of Birth</label>
@@ -75,7 +75,7 @@
             </p>
             <p>
                 <label for="Postcode">Postcode</label>
-                <input type="text" id="Postcode" placeholder="Enter your postcode">
+                <input type="text" id="Postcode" name="Address[]" placeholder="Enter your postcode">
             </p>
 
 
