@@ -23,28 +23,82 @@
                 height: 70vh;
             }
         }
+
+        .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: white;
+        z-index: 1000;
+        border-bottom: 1px solid #eee;
+        }
+
+        .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        }
+
+        .logo img {
+        height: 40px;
+        }
+
+        .nav-links ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        }
+
+        .nav-links a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+        color: #e4002b; /* Swinburne red */
+        }
+
+        .nav-actions {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        }
     </style>
 
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><img src="images/FakeShop_logo.png" width="128px" height="128px"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs With Us</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="apply.html">Apply Now</a></li>
-        </ul>
-    </nav>
-    <div class="content-area">
+    <header class="navbar">
+        <div class="nav-container">
+            <div clas="logo">
+                <img src="images/FakeShop_logo.png" width="128px" height="128px">
+            </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs With Us</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="apply.html">Apply Now</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="search">🔍</a>
+            </div>
+        </div>
+    </header>
+        <div class="content-area">
     <!---<img style="display:group; place-items: center; " src="/images/FakeShop_logo.png" width="200" height="200" >-->
 
     <!-- <img src="images/penguin-random-house-office-design-4.jpg" max-width="100%" width="100%" max-height="40vh" min-height="20vh" height="400px" style="object-fit: cover; object-position: 20% 40%;">
 -->     
 
         <div class="banner-content">
-            <img src="images/penguin-random-house-office-design-4.jpg" class="lazyautosizes" id="banner" >
             
+            <div class="">
+                <img src="images/penguin-random-house-office-design-4.jpg" class="lazyautosizes" id="banner" >
+            </div>
 
 
 
