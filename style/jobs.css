@@ -101,6 +101,9 @@
     font-size: 24px;
     color: #333;
 }
+.close:hover {
+    color: rgba(208, 33, 33, 0.771);
+}
 
 /* Image */
 .left {
@@ -148,7 +151,7 @@
 }
 
 .button-style {
-    font: bold 15px Arial;
+    font: bold 15px;
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;
