@@ -9,6 +9,7 @@
     />
     <meta name="author" content="Moss, Kanav, Vichetra" />
     <title>Apply to FakeShop</title>
+    <link rel="stylesheet" href="./style/apply.css" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
@@ -38,7 +39,9 @@
     </header>
 
     <div class="content-area">
-      <h1 id="JobApplication"><strong>Employment Application</strong></h1>
+      <h1 id="JobApplication">
+        <strong>Official Employment Application</strong>
+      </h1>
 
       <form
         action="http://mercury.swin.edu.au/it000000/formtest.php"
@@ -52,6 +55,7 @@
             width="100"
             height="100"
           />
+
           <p>
             <label for="Reference number">Job Reference Number</label>
             <input
@@ -138,7 +142,7 @@
               required="required"
             />
           </p>
-          >
+
           <p>
             <label for="State">State</label>
             <select id="States" name="State" required>
@@ -198,13 +202,7 @@
           <p>
             <!--Codeing skills (make drop down for those who click yes)-->
             <label for="HTML_exp">HTML</label>
-            <input
-              type="checkbox"
-              id="Html_exp"
-              value="HTML"
-              name="Skills[]"
-              
-            />
+            <input type="checkbox" id="Html_exp" value="HTML" name="Skills[]" />
             <label for="JIRA_exp">JIRA</label>
             <input type="checkbox" id="JIRA_exp" value="JIRA" name="Skills[]" />
             <label for="CSS_exp">CSS</label>
@@ -215,7 +213,6 @@
               name="Skills[]"
               id="Javascript_exp"
               value="Javascript"
-              
             />
             <label for="PHP_exp">PHP</label>
             <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP" />
@@ -225,7 +222,6 @@
               name="Skills[]"
               id="MySQL_exp"
               value="MySQL"
-             
             />
           </p>
           <p>
