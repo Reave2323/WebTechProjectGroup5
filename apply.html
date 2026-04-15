@@ -39,23 +39,23 @@
     </header>
 
     <div class="content-area">
-      <h1 id="JobApplication">
-        <strong>Official Employment Application</strong>
-      </h1>
-
       <form
         action="http://mercury.swin.edu.au/it000000/formtest.php"
         method="post"
       >
         <fieldset>
-          <!---general users-information-->
-          <img
-            id="FormLogo"
-            src="/images/FakeShop_logo.png"
-            width="100"
-            height="100"
-          />
-
+          <div>
+            <img
+              id="FormLogo"
+              src="/images/FakeShop_logo.png"
+              width="100"
+              height="100"
+            />
+          </div>
+          <h1 id="JobApplication">
+            <strong>Official Employment Application</strong>
+          </h1>
+          <h2>Position Applied</h2>
           <p>
             <label for="Reference number">Job Reference Number</label>
             <input
@@ -67,6 +67,13 @@
               required="required"
             />
           </p>
+        </fieldset>
+
+        <fieldset>
+          <!---general users-information-->
+
+          <h2>Personal Information</h2>
+
           <p>
             <label for="FirstName">First Name</label>
             <input
@@ -103,6 +110,7 @@
         </fieldset>
         <fieldset>
           <!---Gender-->
+          <h2>Gender</h2>
           <legend>Gender</legend>
           <label for="Male">M</label>
           <input
@@ -114,10 +122,14 @@
           />
           <label for="Female">F</label>
           <input type="radio" id="Female" name="Gender" value="Female" />
+
+          <label for="Other">Other</label>
+          <input type="radio" id="Other_gender" name="Gender" value="Other" />
         </fieldset>
 
         <fieldset>
           <!---Address-->
+          <h2>Address</h2>
           <p>
             <label for="Street">Street Address</label>
             <input
@@ -172,7 +184,8 @@
 
         <fieldset>
           <!---USER EMAIL-->
-          <legend>Contact Information</legend>
+          <h2>Personal Contact</h2>
+          <legend>Email</legend>
           <p>
             <label for="Email">Email</label>
             <input
