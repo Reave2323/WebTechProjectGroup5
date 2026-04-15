@@ -8,6 +8,25 @@
 		<title>FakeShop Home</title>
 		<link rel="stylesheet" href="./style/style.css" />
 		<link rel="stylesheet" href="style/home.css" />
+
+		<style>
+			.hero {
+				position: relative;
+				height: 100vh;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			/* EACH SLIDE */
+			.slide {
+				position: absolute;
+				inset: 0;
+				background-size: cover;
+				background-position: center;
+				opacity: 1;
+				transition: opacity 1s ease;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -39,7 +58,7 @@
 			<!-- <img src="images/penguin-random-house-office-design-4.jpg" max-width="100%" width="100%" max-height="40vh" min-height="20vh" height="400px" style="object-fit: cover; object-position: 20% 40%;">
 -->
 
-			<div class="banner-content">
+			<!--<div class="banner-content">
 				<img
 					loading="lazy"
 					src="images/penguin-random-house-office-design-4.jpg"
@@ -53,7 +72,23 @@
 						Join us now for a brighter tomorrow, apply today!
 					</p>
 				</div>
-			</div>
+			</div>-->
+
+			<section class="hero">
+				<div
+					class="slide"
+					style="
+						background-image: url(/images/penguin-random-house-office-design-4.jpg);
+					">
+					<div class="banner-text">
+						<h2>Looking for a new career?</h2>
+						<p>
+							&copy;FakeShop, The place where dreams are built on child labour.
+							Join us now for a brighter tomorrow, apply today!
+						</p>
+					</div>
+				</div>
+			</section>
 			<div class="content">
 				<h2>Who we are</h2>
 				<p>
