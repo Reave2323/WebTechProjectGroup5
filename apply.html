@@ -52,7 +52,7 @@
           </h1>
         </div>
 
-        <div class="div6">
+        <div class="div1">
           <fieldset>
             <legend>Position Applied</legend>
             <p>
@@ -87,8 +87,6 @@
                 placeholder="Enter First Name"
                 required="required"
               />
-            </p>
-            <p>
               <label for="LastName"> Last Name</label>
               <input 
                 type="text"
@@ -99,9 +97,6 @@
                 placeholder="Enter Last Name"
                 required="required"
               />
-            </p>
-
-            <p>
               <label for="DateOfBirth">Date Of Birth</label>
               <input
                 type="text"
@@ -112,37 +107,52 @@
                 required="required"
               />
             </p>
-          </fieldset>
-        </div>
-        <div class="div3">
-          <fieldset>
-            <!---Gender-->
-            
-            <legend id="GenderChoice">Gender</legend>
-            <p>
-              
-              <label for="Male">M</label>
+             <p>
+              <label for="Email">Email</label>
               <input
-                type="radio"
-                id="male"
-                name="Gender"
-                value="male"
-                required="required"
+                type="text"
+                placeholder="Enter your email"
+                id="Email"
+                name="Email_address"
+                pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                required
               />
-              <label for="Female">F</label>
-              <input type="radio" id="Female" name="Gender" value="Female" />
-
-              <label for="Others">Others</label>
+              <label for="PhoneNumber">Phone Number</label>
               <input
-                type="radio"
-                id="Other_gender"
-                name="Gender"
-                value="Other"
+                type="text"
+                placeholder="Enter your phone number"
+                id="PhoneNumber"
+                name="Phone_number"
+                pattern="[0-9]{8,12}"
+                required
               />
             </p>
+        
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="Male">M</label>
+                <input
+                  type="radio"
+                  id="male"
+                  name="Gender"
+                  value="male"
+                  required="required"
+                />
+                <label for="Female">F</label>
+                <input type="radio" id="Female" name="Gender" value="Female" />
+
+                <label for="Others">Others</label>
+                <input
+                  type="radio"
+                  id="Other_gender"
+                  name="Gender"
+                  value="Other"
+                />
+              </fieldset>
           </fieldset>
         </div>
-        <div class="div5">
+        
+        <div class="div3">
           <fieldset>
             <!---Address-->
             <legend>Address</legend>
@@ -197,36 +207,9 @@
             </p>
           </fieldset>
         </div>
-        <div class="div4">
-          <fieldset>
-            <!---USER EMAIL-->
-
-            <legend>Personal Contact</legend>
-            <p>
-              <label for="Email">Email</label>
-              <input
-                type="text"
-                placeholder="Enter your email"
-                id="Email"
-                name="Email_address"
-                pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
-                required
-              />
-            </p>
-            <p>
-              <label for="PhoneNumber">Phnone Number</label>
-              <input
-                type="text"
-                placeholder="Enter your phone number"
-                id="PhoneNumber"
-                name="Phone_number"
-                pattern="[0-9]{8,12}"
-                required
-              />
-            </p>
-          </fieldset>
-        </div>
-           <div class="div8">
+        
+       
+           <div class="div4">
              <fieldset>
               <legend>Skill Set</legend>
 
@@ -287,7 +270,7 @@
               
           </fieldset>
         
-        <div class="div9">
+        <div class="div5">
           <fieldset>
             <legend>Other skills</legend>
             <textarea
@@ -300,9 +283,9 @@
           </fieldset>
         </div>
 
-        <div class="div10">
-          <input type="submit" value="Apply" />
-          <input type="Reset" value="Reset Application" />
+        <div class="6">
+          <input type="submit" value="Apply" class="apply_button" />
+          <input type="Reset" value="Reset Application" class="reset_button" />
         </div>
       </form>
     </div>
