@@ -1,5 +1,6 @@
 * {
 	font-family: calibri, sans-serif, Arial, Helvetica;
+	box-sizing: border-box;
 }
 
 body {
@@ -57,23 +58,21 @@ nav.links ul {
 	gap: 30px;
 }
 
-nav.links a {
-	text-decoration: none;
-	color: #111;
-	font-weight: 500;
+nav.links li a:hover {
+	color: #ffdf11;
 	transition: 0.3s;
 }
 
 /* positions navbar */
 .navbar {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 116px;
 	top: 0;
 	bottom: auto;
 	background: white;
 	z-index: 1000;
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee; */
 }
 
 /* Container positioning for navbar, Centers the navbar and gives background colour */
@@ -89,15 +88,30 @@ nav.links a {
 .nav-actions {
 	display: flex;
 	gap: 20px;
-	padding-right: 7%;
 	font-size: 20px;
+	align-items: center;
 }
 
+.nav-actions input {
+	width: 0;
+	opacity: 0;
+	padding: 0;
+	border: none;
+	transition: 0.3s ease;
+}
+
+.nav-actions:focus-within input {
+	width: 200px;
+	opacity: 1;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+}
 /* Creates space between page content and navbar */
+/*
 .content-area {
-	margin-top: 116px;
+	padding-top: 115px;
 }
-
+*/
 /* JOBS STYLING */
 /* Styling for the overarching container for each card to keep things uniform */
 .card-container {
@@ -258,6 +272,7 @@ nav.links a {
 	border-left: 1px solid #cccccc;
 }
 /* HOME STYLING */
+
 .banner {
 	position: relative;
 }
@@ -276,6 +291,7 @@ nav.links a {
 }
 
 /* Banner Image Styling DO NOT TOUCH WITHOUT BEING CAREFUL  */
+/*
 #banner {
 	width: 100%;
 	height: 10vh;
@@ -291,4 +307,5 @@ nav.links a {
 		height: 70vh;
 	}
 }
+*/
 /* ABOUT STYLING */
