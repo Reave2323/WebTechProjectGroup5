@@ -11,31 +11,34 @@
 label{
   font-weight: bold;
   font-size: 15px;
-  
+  te
   
 }
 
 
 
-h1 {margin: 0;
+h1 {margin: 0px;
     font-size:  40 px;  
 }
 
-h2 {color: gold; }
 
-form {text-align: center;}
+
 
 legend{
   font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  color: #000000;
+  
 }
 
-.content-area fieldset{
-  display:grid;
-  padding: 0px;
- grid-template-columns:auto;
- grid-template-rows: auto auto;
+fieldset {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 
 }
+
 
 #JobApplication{
  text-align: center;
@@ -48,52 +51,73 @@ legend{
 }
 
 
-.content-area { display: grid;
+form {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-template-rows: auto;
+    gap: 0px;
 }
 
-.div1 {
-    grid-column: span 2 / span 2;
+.Kbal {
+    grid-column: span 6 / span 6;
 }
 
 .div2 {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 2;
+    padding: 1;
 }
 
 .div3 {
-    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    padding: 0px;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 4;
 }
 
-.div4 {
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-
 .div5 {
     grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 5;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
 }
 
 .div6 {
-    grid-row: span 4 / span 4;
-    grid-column-start: 4;
-    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
 
-.div7 {
+.div8 {
     grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 5;
+    grid-column-start: 4;
+    grid-row-start: 2;
 }
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 0;
+    grid-row-start: 6;
+}
+        
+ 
+        
+    
+
+        
  
         
         
