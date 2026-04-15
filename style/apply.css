@@ -12,9 +12,18 @@
     
 }
 
+label{
+  font-weight: bold;
+}
 
 
 
 h1 {margin: 0;
     font-size:  40 px;  
 }
+
+h2 {color: gold; }
+
+
+
+
