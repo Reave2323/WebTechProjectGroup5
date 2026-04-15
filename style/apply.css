@@ -31,10 +31,10 @@ legend{
 
 .content-area fieldset{
   display:grid;
-  padding: 10px;
- grid-template-columns:auto auto auto\;
+  padding: 0px;
+ grid-template-columns:auto;
+ grid-template-rows: auto auto;
 
-}
 }
 
 #JobApplication{
@@ -43,9 +43,55 @@ legend{
  position: relative;
 	background-color: #292626;
   color: #cf8f18;
-  padding: 0%;
+  padding: 1%;
   grid-template-columns: 0%;
 }
+
+
+.content-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.div2 {
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+        
+        
 
 
 
