@@ -1,10 +1,6 @@
 
-#JobApplication{
- text-align: center;
- justify-content: center;
- position: relative;
- background-color: gold;
-}
+
+
 
 #FormLogo{
     position: absolute;
@@ -14,6 +10,9 @@
 
 label{
   font-weight: bold;
+  font-size: 15px;
+  
+  
 }
 
 
@@ -23,6 +22,31 @@ h1 {margin: 0;
 }
 
 h2 {color: gold; }
+
+form {text-align: center;}
+
+legend{
+  font-weight: bold;
+}
+
+.content-area fieldset{
+  display:grid;
+  padding: 10px;
+ grid-template-columns:auto auto auto\;
+
+}
+}
+
+#JobApplication{
+ text-align: center;
+ justify-content: center;
+ position: relative;
+	background-color: #292626;
+  color: #cf8f18;
+  padding: 0%;
+  grid-template-columns: 0%;
+}
+
 
 
 
