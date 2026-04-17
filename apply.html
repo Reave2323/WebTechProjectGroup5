@@ -11,6 +11,9 @@
     <title>Apply to FakeShop</title>
     <link rel="stylesheet" href="./style/apply.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      
+    </style>
   </head>
 
   <body>
@@ -49,222 +52,246 @@
           </h1>
         </div>
 
-        <fieldset>
-          <h2>Position Applied</h2>
-          <p>
-            <label for="Reference number">Job Reference Number</label>
-            <input
-              type="text"
-              id="Reference_number"
-              name="Referenc Number"
-              pattern="[0-9]{5}"
-              placeholder="Enter Reference Number"
-              required="required"
-            />
-          </p>
-        </fieldset>
+        <div class="div1">
+          <fieldset>
+            <legend>Position Applied</legend>
+            <p>
+              <label for="Reference number" class="Labeling"
+                >Job Reference Number</label
+              >
+              <input
+                type="text"
+                id="Reference_number"
+                name="Referenc Number"
+                pattern="[0-9]{5}"
+                placeholder="Enter Reference Number"
+                required="required"
+              />
+            </p>
+          </fieldset>
+        </div>
+        <div class="div2">
+          <fieldset>
+            <!---general users-information-->
 
-        <fieldset>
-          <!---general users-information-->
+            <legend>Personal Information</legend>
 
-          <h2>Personal Information</h2>
+            <p>
+              <label for="FirstName" class="Labeling">First Name</label>
+              <input
+                type="text"
+                id="FirstName"
+                name="First_Name"
+                maxlength="20"
+                pattern="[A-Za-z ]+"
+                placeholder="Enter First Name"
+                required="required"
+              />
+              <label for="LastName"> Last Name</label>
+              <input 
+                type="text"
+                id="LastName"
+                name="Last_Name"
+                maxlength="20"
+                pattern="[A-Za-z ]+"
+                placeholder="Enter Last Name"
+                required="required"
+              />
+              <label for="DateOfBirth">Date Of Birth</label>
+              <input
+                type="text"
+                id="Date_Of_Birth"
+                name="DateOfBirth"
+                pattern="\d{2}/\d{2}/\d{4}"
+                placeholder="dd/mm/yyyy"
+                required="required"
+              />
+            </p>
+             <p>
+              <label for="Email">Email</label>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                id="Email"
+                name="Email_address"
+                pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                required
+              />
+              <label for="PhoneNumber">Phone Number</label>
+              <input
+                type="text"
+                placeholder="Enter your phone number"
+                id="PhoneNumber"
+                name="Phone_number"
+                pattern="[0-9]{8,12}"
+                required
+              />
+            </p>
+        
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="Male">M</label>
+                <input
+                  type="radio"
+                  id="male"
+                  name="Gender"
+                  value="male"
+                  required="required"
+                />
+                <label for="Female">F</label>
+                <input type="radio" id="Female" name="Gender" value="Female" />
 
-          <p>
-            <label for="FirstName">First Name</label>
-            <input
-              type="text"
-              id="FirstName"
-              name="First_Name"
-              maxlength="20"
-              pattern="[A-Za-z ]+"
-              placeholder="Enter First Name"
-              required="required"
-            />
-            <label for="LastName">Last Name</label>
-            <input
-              type="text"
-              id="LastName"
-              name="Last_Name"
-              maxlength="20"
-              pattern="[A-Za-z ]+"
-              placeholder="Enter Last Name"
-              required="required"
-            />
-          </p>
-          <p>
-            <label for="DateOfBirth">Date Of Birth</label>
-            <input
-              type="text"
-              id="Date_Of_Birth"
-              name="DateOfBirth"
-              pattern="\d{2}/\d{2}/\d{4}"
-              placeholder="dd/mm/yyyy"
-              required="required"
-            />
-          </p>
-        </fieldset>
-        <fieldset>
-          <!---Gender-->
-          <h2>Gender</h2>
-          <legend>Gender</legend>
-          <label for="Male">M</label>
-          <input
-            type="radio"
-            id="male"
-            name="Gender"
-            value="male"
-            required="required"
-          />
-          <label for="Female">F</label>
-          <input type="radio" id="Female" name="Gender" value="Female" />
+                <label for="Others">Others</label>
+                <input
+                  type="radio"
+                  id="Other_gender"
+                  name="Gender"
+                  value="Other"
+                />
+              </fieldset>
+          </fieldset>
+        </div>
+        
+        <div class="div3">
+          <fieldset>
+            <!---Address-->
+            <legend>Address</legend>
+            <p>
+              <label for="Street">Street Address</label>
+              <input
+                type="text"
+                id="Street"
+                name="Address[]"
+                placeholder="Enter your street"
+                pattern="[a-zA-Z0-9\s.,-]{5,40}"
+                maxlength="40"
+                required="required"
+              />
+                    <label for="Suburb/Town">Suburb/Town</label>
+              <input
+                type="text"
+                id="Suburb/Town"
+                name="Address[]"
+                placeholder="Enter your Suburb/Town"
+                pattern="[a-zA-Z0-9\s.,-]{5,40}"
+                maxlength="40"
+                required="required"
+              />
+            </p>
+            
 
-          <label for="Other">Other</label>
-          <input type="radio" id="Other_gender" name="Gender" value="Other" />
-        </fieldset>
+            <p>
+              <label for="State">State</label>
+              <select id="States" name="State" required>
+                <option value="">Select a State</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+              </select>
+              <label for="Postcode">Post Code</label>
+              <input
+                type="text"
+                id="Postcode"
+                name="Address[]"
+                placeholder="Enter your postcode"
+                pattern="[0-9]{4}"
+                required
+              />
+            
+              
+            </p>
+          </fieldset>
+        </div>
+        
+       
+           <div class="div4">
+             <fieldset>
+              <legend>Skill Set</legend>
 
-        <fieldset>
-          <!---Address-->
-          <h2>Address</h2>
-          <p>
-            <label for="Street">Street Address</label>
-            <input
-              type="text"
-              id="Street"
-              name="Address[]"
-              placeholder="Enter your street"
-              pattern="[a-zA-Z0-9\s.,-]{5,40}"
-              maxlength="40"
-              required="required"
-            />
-          </p>
-          <p>
-            <label for="Suburb/Town">Suburb/Town</label>
-            <input
-              type="text"
-              id="Suburb/Town"
-              name="Address[]"
-              placeholder="Enter your Suburb/Town"
-              pattern="[a-zA-Z0-9\s.,-]{5,40}"
-              maxlength="40"
-              required="required"
-            />
-          </p>
+              <p>
+                <!--Codeing skills (make drop down for those who click yes)-->
+                <label for="HTML_exp">HTML</label>
+                <input
+                  type="checkbox"
+                  id="Html_exp"
+                  value="HTML"
+                  name="Skills[]"
+                />
+                <label for="JIRA_exp">JIRA</label>
+                <input
+                  type="checkbox"
+                  id="JIRA_exp"
+                  value="JIRA"
+                  name="Skills[]"
+                />
+                <label for="CSS_exp">CSS</label>
+                <input type="checkbox" id="CSS_exp" name="Skills[]" value="CSS" />
+                <label for="Javascript_exp">Javascript</label>
+                <input
+                  type="checkbox"
+                  name="Skills[]"
+                  id="Javascript_exp"
+                  value="Javascript"
+                />
+                <label for="PHP_exp">PHP</label>
+                <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP" />
+                <label for="MySQL_exp">MySQL</label>
+                <input
+                  type="checkbox"
+                  name="Skills[]"
+                  id="MySQL_exp"
+                  value="MySQL"
+                />
+                <p>
+                <!---Communication Skills or smth idk-->
+                <label for="Communication">Communication Skills</label>
+                <input
+                  type="checkbox"
+                  name="Skills[]"
+                  id="Communication"
+                  value="Communication"
+                />
+                <label for="ProblemSolvingSkills">Problem Solving Skills</label>
+                <input
+                  type="checkbox"
+                  name="Skills[]"
+                  id="ProblemSolvingSkills"
+                  value="ProblemSolvingSkills"
+                />
+              </p>
+              </p>
+            </div>
+           
+              
+          </fieldset>
+        
+        <div class="div5">
+          <fieldset>
+            <legend>Other skills</legend>
+            <textarea
+              placeholder="Describe your other skills"
+              id="Other_skills"
+              name="Other skills"
+              rows="3"
+              cols="40"
+            ></textarea>
+          </fieldset>
+        </div>
 
-          <p>
-            <label for="State">State</label>
-            <select id="States" name="State" required>
-              <option value="">Select a State</option>
-              <option value="VIC">VIC</option>
-              <option value="NSW">NSW</option>
-              <option value="QLD">QLD</option>
-              <option value="NT">NT</option>
-              <option value="WA">WA</option>
-              <option value="SA">SA</option>
-              <option value="TAS">TAS</option>
-              <option value="ACT">ACT</option>
-            </select>
-          </p>
-          <p>
-            <label for="Postcode">Post Code</label>
-            <input
-              type="text"
-              id="Postcode"
-              name="Address[]"
-              placeholder="Enter your postcode"
-              pattern="[0-9]{4}"
-              required
-            />
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <!---USER EMAIL-->
-          <h2>Personal Contact</h2>
-          <legend>Email</legend>
-          <p>
-            <label for="Email">Email</label>
-            <input
-              type="text"
-              placeholder="Enter your email"
-              id="Email"
-              name="Email_address"
-              pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
-              required
-            />
-          </p>
-          <p>
-            <label for="PhoneNumber">Phnone Number</label>
-            <input
-              type="text"
-              placeholder="Enter your phone number"
-              id="PhoneNumber"
-              name="Phone_number"
-              pattern="[0-9]{8,12}"
-              required
-            />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Skills</legend>
-
-          <p>
-            <!--Codeing skills (make drop down for those who click yes)-->
-            <label for="HTML_exp">HTML</label>
-            <input type="checkbox" id="Html_exp" value="HTML" name="Skills[]" />
-            <label for="JIRA_exp">JIRA</label>
-            <input type="checkbox" id="JIRA_exp" value="JIRA" name="Skills[]" />
-            <label for="CSS_exp">CSS</label>
-            <input type="checkbox" id="CSS_exp" name="Skills[]" value="CSS" />
-            <label for="Javascript_exp">Javascript</label>
-            <input
-              type="checkbox"
-              name="Skills[]"
-              id="Javascript_exp"
-              value="Javascript"
-            />
-            <label for="PHP_exp">PHP</label>
-            <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP" />
-            <label for="MySQL_exp">MySQL</label>
-            <input
-              type="checkbox"
-              name="Skills[]"
-              id="MySQL_exp"
-              value="MySQL"
-            />
-          </p>
-          <p>
-            <!---Communication Skills or smth idk-->
-            <label for="Communication">Communication Skills</label>
-            <input
-              type="checkbox"
-              name="Skills[]"
-              id="Communication"
-              value="Communication"
-            />
-            <label for="ProblemSolvingSkills">Problem Solving Skills</label>
-            <input
-              type="checkbox"
-              name="Skills[]"
-              id="ProblemSolvingSkills"
-              value="ProblemSolvingSkills"
-            />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Other skills</legend>
-          <textarea
-            placeholder="Describe your other skills"
-            id="Other_skills"
-            name="Other skills"
-            rows="3"
-            cols="40"
-          ></textarea>
-        </fieldset>
-
-        <input type="submit" value="Apply" />
-        <input type="Reset" value="Reset Application" />
+        <div class="6">
+          <input type="submit" value="Apply" class="apply_button" />
+          <input type="Reset" value="Reset Application" class="reset_button" />
+        </div>
       </form>
     </div>
+
+    
+
 
     <footer>
       <a href="https://www.swinburne.edu.au/"
