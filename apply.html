@@ -193,18 +193,20 @@
                 <option value="TAS">TAS</option>
                 <option value="ACT">ACT</option>
               </select>
-              <label for="Postcode">Post Code</label>
-              <input
-                type="text"
-                id="Postcode"
-                name="Address[]"
-                placeholder="Enter your postcode"
-                pattern="[0-9]{4}"
-                required
-              />
+            </p>
+              <p>
+                <label for="Postcode">Post Code</label>
+                <input
+                  type="text"
+                  id="Postcode"
+                  name="Address[]"
+                  placeholder="Enter your postcode"
+                  pattern="[0-9]{4}"
+                  required
+                />
             
               
-            </p>
+              </p>
           </fieldset>
         </div>
         
@@ -221,6 +223,7 @@
                   id="Html_exp"
                   value="HTML"
                   name="Skills[]"
+                  checked
                 />
                 <label for="JIRA_exp">JIRA</label>
                 <input
@@ -228,24 +231,27 @@
                   id="JIRA_exp"
                   value="JIRA"
                   name="Skills[]"
+                  checked
                 />
                 <label for="CSS_exp">CSS</label>
-                <input type="checkbox" id="CSS_exp" name="Skills[]" value="CSS" />
+                <input type="checkbox" id="CSS_exp" name="Skills[]" value="CSS" checked />
                 <label for="Javascript_exp">Javascript</label>
                 <input
                   type="checkbox"
                   name="Skills[]"
                   id="Javascript_exp"
                   value="Javascript"
+                  checked
                 />
                 <label for="PHP_exp">PHP</label>
-                <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP" />
+                <input type="checkbox" id="PHP_exp" name="Skills[]" value="PHP" checked />
                 <label for="MySQL_exp">MySQL</label>
                 <input
                   type="checkbox"
                   name="Skills[]"
                   id="MySQL_exp"
                   value="MySQL"
+                  checked
                 />
                 <p>
                 <!---Communication Skills or smth idk-->
@@ -255,6 +261,7 @@
                   name="Skills[]"
                   id="Communication"
                   value="Communication"
+                  checked
                 />
                 <label for="ProblemSolvingSkills">Problem Solving Skills</label>
                 <input
@@ -262,6 +269,7 @@
                   name="Skills[]"
                   id="ProblemSolvingSkills"
                   value="ProblemSolvingSkills"
+                  checked
                 />
               </p>
               </p>
@@ -277,8 +285,8 @@
               placeholder="Describe your other skills"
               id="Other_skills"
               name="Other skills"
-              rows="3"
-              cols="40"
+              rows="4"
+              cols="140"
             ></textarea>
           </fieldset>
         </div>
