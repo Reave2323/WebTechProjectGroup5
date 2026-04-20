@@ -47,8 +47,11 @@ table {
 	color: #cf8f18;
 }
 
-table {
-	padding-right: 80px;
+.home-table {
+	/*padding-right: 80px;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 .who {
 	margin-left: 160px;

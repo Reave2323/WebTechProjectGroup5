@@ -113,6 +113,9 @@ nav.links li a:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.content {
+	text-align: center;
+}
 
 /* Footer Styling */
 .footer {
@@ -130,6 +133,10 @@ nav.links li a:hover {
 
 .footer p {
 	color: #cf8f18;
+}
+
+.Footer-Ack {
+	text-align: center;
 }
 
 /* JOBS STYLING */
@@ -335,4 +342,40 @@ aside {
 	text-align: center;
 }
 
+.home-table {
+	/*padding-right: 80px;*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: 1px solid black;
+}
+.who {
+	margin-left: 160px;
+	margin-right: 160px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #cf8f18;
+	border-radius: 20px;
+}
+.what {
+	margin-left: 160px;
+	margin-right: 160px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgb(225, 255, 0);
+	border-radius: 20px;
+}
+
+.why {
+	margin-left: 160px;
+	margin-right: 160px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: blue;
+	border-radius: 20px;
+}
+
 /* ABOUT STYLING */
+
+/* APPLY STYLING*/
