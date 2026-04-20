@@ -267,6 +267,20 @@ nav.links li a:hover {
 	object-fit: contain;
 }
 
+.left-backend {
+	flex: 0 0 250px;
+	position: relative;
+	overflow: hidden;
+}
+
+.left-backend img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-42%, -50%);
+	object-fit: contain;
+}
+
 /* Content */
 .right {
 	padding: 20px;
