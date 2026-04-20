@@ -1,12 +1,11 @@
 /* About page styling */
-/*
+
 .about-intro,
 .group-details,
 .member-definition-list,
 .member-info,
 .group-photo-section,
 .fun-facts,
-*/
 .acknowledgement {
 	max-width: 1000px;
 	margin: 30px auto;
@@ -107,6 +106,7 @@
 	transform: rotateY(180deg);
 }
 
+.flip-card-front,
 .flip-card-back {
 	position: absolute;
 	width: 100%;
@@ -182,6 +182,7 @@
 	margin-bottom: 10px;
 }
 
+.about-table th,
 .about-table td {
 	border: 1px solid #cccccc;
 	padding: 12px;
