@@ -160,8 +160,9 @@ nav.links li a:hover {
 /* settings for the images for each card */
 .card img {
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	border-radius: 8px;
+	object-fit: cover;
 }
 
 .card-content {
@@ -257,7 +258,6 @@ nav.links li a:hover {
 .right ul {
 	display: block;
 	list-style: disc;
-	/* bring back bullets */
 	margin: 10px 0;
 	padding-left: 20px;
 	line-height: 1.6;
@@ -289,6 +289,32 @@ nav.links li a:hover {
 	border-bottom: 1px solid #333333;
 	border-left: 1px solid #cccccc;
 }
+
+.ready {
+	transform: translateY(200%);
+}
+
+.details {
+	transform: translateY(300%);
+}
+
+.not-found {
+	transform: translateY(800%);
+}
+
+aside {
+	display: block;
+	width: 20%;
+	background-color: #333333;
+	color: aliceblue;
+	padding: 15px;
+	margin-left: 25px;
+	float: right;
+	border-left: 3px solid #00a8a8;
+	margin-bottom: 1rem;
+	clear: right;
+}
+
 /* HOME STYLING */
 
 .banner {
@@ -308,22 +334,4 @@ nav.links li a:hover {
 	text-align: center;
 }
 
-/* Banner Image Styling DO NOT TOUCH WITHOUT BEING CAREFUL  */
-/*
-#banner {
-	width: 100%;
-	height: 10vh;
-	min-height: 400px;
-	max-height: 900px;
-
-	object-fit: cover;
-	object-position: 20% 40%;
-}
-
-@media (min-width: 12000px) {
-	#banner {
-		height: 70vh;
-	}
-}
-*/
 /* ABOUT STYLING */
