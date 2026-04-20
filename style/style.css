@@ -106,12 +106,30 @@ nav.links li a:hover {
 	padding: 5px 10px;
 	border: 1px solid #ccc;
 }
-/* Creates space between page content and navbar */
-/*
+/* Stops text from going to the edge of screen and falling off */
 .content-area {
-	padding-top: 115px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-*/
+
+/* Footer Styling */
+.footer {
+	margin-top: 15px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 40px;
+	background-color: #292626;
+}
+.footer h3 {
+	color: #cf8f18;
+}
+
+.footer p {
+	color: #cf8f18;
+}
+
 /* JOBS STYLING */
 /* Styling for the overarching container for each card to keep things uniform */
 .card-container {

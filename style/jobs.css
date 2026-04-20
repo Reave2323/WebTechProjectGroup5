@@ -1,163 +1,183 @@
 /* Styling for the overarching container for each card to keep things uniform */
 .card-container {
-    max-width: 95%;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 25px;
+	max-width: 95%;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 25px;
 }
 
 /* Each cards styling. Box shadow makes it easier to distinguish between cards */
 .card {
-    flex: 1;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+	flex: 1;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
 }
 
 /* subtle hover effect */
 .card:hover {
-    transform: scale(1.05);
-
+	transform: scale(1.05);
 }
 
 /* settings for the images for each card */
 .card img {
-    width: 100%;
-    height: 200px;
-    border-radius: 8px;
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+	object-fit: cover;
 }
 
 .card-content {
-    padding: 20px;
-
+	padding: 20px;
 }
 
 /* card content styling */
 .card-content h3 {
-    color: #026aa6;
-    font-size: 27px;
-    margin-bottom: 10px;
+	color: #026aa6;
+	font-size: 27px;
+	margin-bottom: 10px;
 }
 
 .card-content {
-    color: #333;
-    font-size: 17px;
+	color: #333;
+	font-size: 17px;
 }
-
-
 
 /* Popup overlay */
 .popup-container {
-    margin-top: 116px;
+	margin-top: 116px;
 }
 
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.3s;
 }
 
 /* Show popup */
 .popup:target {
-    opacity: 1;
-    pointer-events: auto;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 /* Card */
 .popup-card {
-    width: 700px;
-    margin-top: 116px;
-    max-width: 1000px;
-    max-height: 70vh;
-    background: #fff;
-    display: flex;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
+	width: 700px;
+	margin-top: 116px;
+	max-width: 1000px;
+	max-height: 70vh;
+	background: #fff;
+	display: flex;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
 }
 
 /* Close button */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    text-decoration: none;
-    font-size: 24px;
-    color: #333;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	text-decoration: none;
+	font-size: 24px;
+	color: #333;
 }
 .close:hover {
-    color: rgba(208, 33, 33, 0.771);
+	color: rgba(208, 33, 33, 0.771);
 }
 
 /* Image */
 .left {
-    flex: 0 0 250px;
-    /* fixed width column */
+	flex: 0 0 250px;
+	/* fixed width column */
 }
 
 .left img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 /* Content */
 .right {
-    padding: 20px;
-    flex: 1;
-    overflow-y: auto;
+	padding: 20px;
+	flex: 1;
+	overflow-y: auto;
 
-    display: block;
+	display: block;
 }
 
 .right ul {
-    display: block;
-    list-style: disc;
-    /* bring back bullets */
-    margin: 10px 0;
-    padding-left: 20px;
-    line-height: 1.6;
+	display: block;
+	list-style: disc;
+	/* bring back bullets */
+	margin: 10px 0;
+	padding-left: 20px;
+	line-height: 1.6;
 }
 
 .right li {
-    display: list-item;
-    margin-bottom: 8px;
+	display: list-item;
+	margin-bottom: 8px;
 }
 
 /* Button */
 .apply-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #00a8a8;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background: #00a8a8;
+	color: #fff;
+	border: none;
+	cursor: pointer;
 }
 
 .button-style {
-    font: bold 15px;
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+	font: bold 15px;
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #cccccc;
+}
+.ready {
+	transform: translateY(200%);
+}
+
+.details {
+	transform: translateY(300%);
+}
+
+.not-found {
+	transform: translateY(800%);
+}
+
+aside {
+	display: block;
+	width: 20%;
+	background-color: #333333;
+	color: aliceblue;
+	padding: 15px;
+	margin-left: 25px;
+	float: right;
+	border-left: 3px solid #00a8a8;
+	margin-bottom: 1rem;
+	clear: right;
 }
