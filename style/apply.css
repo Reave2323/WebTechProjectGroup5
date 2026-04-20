@@ -109,16 +109,15 @@ input::placeholder{
 
 input[type="submit"]{
 
-    background-color: lightgrey;
+    background-color: whitesmoke;
     border-radius: 12px;
     color: black;
     cursor: pointer;
-    
     padding: 10px 20px;
 }
 
 input[type="reset"] {
-    background-color: lightgrey;
+    background-color: whitesmoke;
     border-radius: 12px;
     color: black;
     cursor: pointer;
