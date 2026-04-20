@@ -37,16 +37,6 @@ fieldset {
 }
 
 
-#JobApplication{
- text-align: center;
- justify-content: center;
- position: relative;
-  color: goldenrod;
-  padding: 1%;
-  grid-template-columns: 0%;
-  margin: 0%;
-  text-decoration-line: underline;
-}
 
 
 form {
