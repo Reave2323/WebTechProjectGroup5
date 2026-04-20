@@ -64,7 +64,6 @@
                 id="Reference_number"
                 name="Referenc Number"
                 pattern="[0-9]{5}"
-                placeholder="Enter Reference Number"
                 required="required"
               />
             </p>
@@ -84,7 +83,7 @@
                 name="First_Name"
                 maxlength="20"
                 pattern="[A-Za-z ]+"
-                placeholder="Enter First Name"
+      
                 required="required"
               />
               <label for="LastName"> Last Name</label>
@@ -94,13 +93,13 @@
                 name="Last_Name"
                 maxlength="20"
                 pattern="[A-Za-z ]+"
-                placeholder="Enter Last Name"
+                
                 required="required"
               />
               <label for="DateOfBirth">Date Of Birth</label>
               <input
                 type="text"
-                id="Date_Of_Birth"
+                id="DateOfBirth"
                 name="DateOfBirth"
                 pattern="\d{2}/\d{2}/\d{4}"
                 placeholder="dd/mm/yyyy"
@@ -111,7 +110,6 @@
               <label for="Email">Email</label>
               <input
                 type="text"
-                placeholder="Enter your email"
                 id="Email"
                 name="Email_address"
                 pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
@@ -120,7 +118,6 @@
               <label for="PhoneNumber">Phone Number</label>
               <input
                 type="text"
-                placeholder="Enter your phone number"
                 id="PhoneNumber"
                 name="Phone_number"
                 pattern="[0-9]{8,12}"
@@ -133,7 +130,7 @@
               <label for="Male">M</label>
                 <input
                   type="radio"
-                  id="male"
+                  id="Male"
                   name="Gender"
                   value="male"
                   required="required"
@@ -144,9 +141,9 @@
                 <label for="Others">Others</label>
                 <input
                   type="radio"
-                  id="Other_gender"
+                  id="Others"
                   name="Gender"
-                  value="Other"
+                  value="others"
                 />
               </fieldset>
           </fieldset>
@@ -162,7 +159,6 @@
                 type="text"
                 id="Street"
                 name="Address[]"
-                placeholder="Enter your street"
                 pattern="[a-zA-Z0-9\s.,-]{5,40}"
                 maxlength="40"
                 required="required"
@@ -172,7 +168,6 @@
                 type="text"
                 id="Suburb/Town"
                 name="Address[]"
-                placeholder="Enter your Suburb/Town"
                 pattern="[a-zA-Z0-9\s.,-]{5,40}"
                 maxlength="40"
                 required="required"
@@ -181,8 +176,8 @@
             
 
             <p>
-              <label for="State">State</label>
-              <select id="States" name="State" required>
+              <label for="State">States</label>
+              <select id="State" name="State" required>
                 <option value="">Select a State</option>
                 <option value="VIC">VIC</option>
                 <option value="NSW">NSW</option>
@@ -200,7 +195,6 @@
                   type="text"
                   id="Postcode"
                   name="Address[]"
-                  placeholder="Enter your postcode"
                   pattern="[0-9]{4}"
                   required
                 />
@@ -211,8 +205,8 @@
         </div>
         
        
-           <div class="div4">
-             <fieldset>
+          <div class="div4">
+            <fieldset>
               <legend>Skill Set</legend>
 
               <p>
@@ -220,7 +214,7 @@
                 <label for="HTML_exp">HTML</label>
                 <input
                   type="checkbox"
-                  id="Html_exp"
+                  id="HTML_exp"
                   value="HTML"
                   name="Skills[]"
                   checked
@@ -272,8 +266,8 @@
                   checked
                 />
               </p>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         
         <div class="div5">
           <fieldset>
@@ -300,7 +294,7 @@
 
 <div class="footer">
 			<footer>
-				<h3 class="Footer-Ack">Acknowledgement of Country</h3>
+				<h2 class="Footer-Ack">Acknowledgement of Country</h2>
 				<p>
 					At FakeShop, we respectfully acknowledge the Wurundjeri People of the
 					Kulin Nation, who are the Traditional Owners of the land on which
