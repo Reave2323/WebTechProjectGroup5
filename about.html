@@ -10,11 +10,31 @@
 		<title>About the Team</title>
 		<link rel="stylesheet" href="./style/style.css" />
 		<link rel="stylesheet" href="./style/about.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Khmer:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!--Adds Font Support For Non-English Characters-->
+
 		<style>
 			.about-note {
 				text-align: center;
 				font-style: italic;
 				margin-top: 0.5em;
+			}
+
+			.noto-sans-jp-text {
+				font-family: "Noto Sans JP", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+			}
+
+			.noto-sans-khmer-text {
+				font-family: "Noto Sans Khmer", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-variation-settings: "wdth" 100;
 			}
 		</style>
 	</head>
@@ -72,15 +92,15 @@
 					<dl>
 						<dt>
 							Moss Whitehall
-							<span class="student-id">Student ID: ________</span>
+							<span class="student-id">Student ID: 106507235</span>
 						</dt>
 						<dd>
 							Co-founding member of FakeShop and helped organise the FakeShop
 							team and project tasks.
 						</dd>
-						<dd>
-							Quote in first/favourite language: “FakeShop has really changed my
-							life and is how I want my life to keep going.”
+						<dd class="noto-sans-jp-text">
+							Quote in first/favourite language:
+							FakeShopは本当に私の人生を変えてくれたもので、これからもこのままの生活を続けていきたいと思っています。
 						</dd>
 						<dd>
 							English translation: “FakeShop has really changed my life and is
@@ -112,7 +132,9 @@
 							Co-founding member of FakeShop and contributed to improving user
 							experience and digital retail solutions.
 						</dd>
-						<dd>Quote in first/favourite language: “សក់អ្នក ក្បាលអ្នក”</dd>
+						<dd class="noto-sans-khmer-text">
+							Quote in first/favourite language: “សក់អ្នក ក្បាលអ្នក”
+						</dd>
 						<dd>
 							English translation: “You are responsible for your own action”
 						</dd>
@@ -138,7 +160,7 @@
 								</div>
 								<div class="flip-card-back">
 									<h3>Moss Whitehall</h3>
-									<p class="student-id">Student ID: ________</p>
+									<p class="student-id">Student ID: 106507235</p>
 									<p>
 										Co-founding member who helped organise the FakeShop team and
 										project tasks.
