@@ -29,6 +29,7 @@
 	height: 200px;
 	border-radius: 8px;
 	object-fit: cover;
+	transform: rotate(270);
 }
 
 .card-content {
