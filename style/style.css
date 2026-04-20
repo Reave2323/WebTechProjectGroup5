@@ -139,20 +139,18 @@ nav.links li a:hover {
 	text-align: center;
 }
 
-.Application-logos{
+.Application-logos {
 	gap: 20px;
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	
 }
-.Application-logos{
+.Application-logos {
 	max-width: 80px;
 	height: auto;
 	display: inline-flex;
 	vertical-align: middle;
 }
-
 
 /* JOBS STYLING */
 /* Styling for the overarching container for each card to keep things uniform */
@@ -363,6 +361,16 @@ aside {
 	margin-right: auto;
 	width: 50%;
 	border: 1px solid black;
+}
+
+.home-table th {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.home-table td {
+	border: 1px solid black;
+	border-radius: 3px;
 }
 .who {
 	margin-left: 160px;
